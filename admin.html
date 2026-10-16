@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Admin Panel</h1>
+<link rel="stylesheet" href="styles.css">
+<input id="p" placeholder="Product Name">
+<input id="price" placeholder="Price">
+<button onclick="add()">Add Product</button>
+<p id="msg"></p>
+<script>
+function add() {
+  document.getElementById("msg").innerHTML =
+  "Product Added: " + document.getElementById("p").value +
+  " - ₹" + document.getElementById("price").value;
+}
+</script>
+<a href="index.html">Home</a>
+</body>
+</html>
